@@ -1,4 +1,4 @@
-import { Card } from "../../components";
+import { Card, Info } from "../../components";
 
 import PostActivityCard from "../../components/post";
 import { _container } from "./index.styled";

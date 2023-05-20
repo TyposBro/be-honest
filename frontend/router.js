@@ -1,14 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Company, Profile, Hello, Hr } from "./pages";
-import { Layout} from "./pages/Layout";
-
+import { Company, User, Hello, Hr } from "./pages";
+import { Layout } from "./pages/Layout";
 
 export const router = createBrowserRouter([
   {
     path: "/p",
     element: (
       <Layout>
-        <Profile />
+        <User />
       </Layout>
     ),
   },
@@ -41,7 +40,7 @@ export const router = createBrowserRouter([
     path: "/",
     element: (
       <Layout>
-        <Profile />
+        <User />
       </Layout>
     ),
   },

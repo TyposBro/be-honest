@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { Home } from "@styled-icons/boxicons-regular";
+import styled, { css } from "styled-components";
+import { Home, Hash } from "@styled-icons/boxicons-regular";
 import { Messenger } from "@styled-icons/boxicons-logos";
 import { Notifications } from "@styled-icons/material-sharp";
-import { BookmarkFill } from "@styled-icons/bootstrap";
+import { BookmarkFill, Search } from "@styled-icons/bootstrap";
 
 export const Container = styled.div`
   display: flex;
@@ -12,7 +12,8 @@ export const Container = styled.div`
   width: 350px;
   height: 450px;
   border-radius: 25px;
-  padding: 20px 30px;
+  padding: 20px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
 `;
 
 export const Logo = styled.div`
@@ -33,7 +34,39 @@ export const _link = styled(Link)`
   line-height: 29px;
   /* identical to box height */
 
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  /* border: 1px solid rgba(0, 0, 0, 0.25); */
+
   color: rgba(70, 65, 65, 0.6);
 `;
 
-export const _Home = styled(Link)``;
+const icon = css`
+  /* Vector */
+  width: 24px;
+  height: 24px;
+  color: rgba(70, 65, 65, 0.6);
+  margin-right: 10px;
+`;
+
+export const _Bookmark = styled(BookmarkFill)`
+  ${icon}
+`;
+export const _Hash = styled(Hash)`
+  ${icon}
+`;
+export const _Home = styled(Home)`
+  ${icon}
+`;
+export const _Notification = styled(Notifications)`
+  ${icon}
+`;
+export const _Messenger = styled(Messenger)`
+  ${icon}
+`;
+
+export const _Search = styled(Search)`
+  ${icon}
+`;

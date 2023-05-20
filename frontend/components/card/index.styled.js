@@ -3,8 +3,11 @@ import styled from "styled-components";
 export const _container = styled.div`
   width: 400px;
   height: 200px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5); */
+  background-color: #fff;
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  border: 1px solid rgba(0, 0, 0, 0.25);
+
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
   border-radius: 35px;
   padding: 20px 30px;

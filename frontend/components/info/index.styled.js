@@ -3,8 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 270px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* background: rgba(255, 255, 255, 0.5); */
+  background-color: #fff;
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  border: 1px solid rgba(0, 0, 0, 0.25);
+
   border-radius: 40px;
   padding: 30px 40px;
   color: black;
@@ -60,7 +63,7 @@ export const Tag = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 17px;
+  padding: 10px 15px;
   height: 40px;
 
   background: #ffffff;
@@ -74,4 +77,8 @@ export const Tag = styled.div`
   line-height: 39px;
 
   color: rgba(70, 65, 65, 0.6);
+
+  :not(:first-child) {
+    margin-left: 10px;
+  }
 `;

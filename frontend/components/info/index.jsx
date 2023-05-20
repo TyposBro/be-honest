@@ -15,7 +15,7 @@ export const Info = () => {
       <Main>
         <Avatar src="https://avatars.githubusercontent.com/u/1024025?v=4" alt="Alex Davidson" />
         <InfoContainer>
-          <Title>Alex Davidson</Title>
+          <Title>Linus Torvalds</Title>
           <Subtitle>Software Engineer</Subtitle>
           <Subtitle>Web3/Crypto enthusiast</Subtitle>
         </InfoContainer>
@@ -23,8 +23,9 @@ export const Info = () => {
       <TagContainer>
         <Tag>#Web3</Tag>
         <Tag>#Near</Tag>
-        <Tag>#JavaScript</Tag>
-        <Tag>#React</Tag>
+        <Tag>#Linux</Tag>
+        <Tag>#C++</Tag>
+        <Tag>#Rust</Tag>
       </TagContainer>
     </Container>
   );

@@ -1,4 +1,4 @@
-import { Link } from "../components";
+import { Link, Profile } from "../components";
 import { Container, Content, Sidebar } from "./Layout.styled";
 
 export const Layout = ({ children }) => {
@@ -6,6 +6,7 @@ export const Layout = ({ children }) => {
     <Container>
       <Sidebar>
         <Link />
+        <Profile />
       </Sidebar>
       <Content>{children}</Content>
     </Container>

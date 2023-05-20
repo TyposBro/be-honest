@@ -1,9 +1,7 @@
-import exp from "constants";
 import styled from "styled-components";
-import {Star} from '@styled-icons/material';
+import { Star } from "@styled-icons/material";
 
-
-export const PostCard= styled.div`
+export const PostCard = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 5px;
@@ -11,6 +9,20 @@ export const PostCard= styled.div`
   background-color: white;
   padding: 10px 10px;
   border-radius: 8px;
+
+  /* Apple */
+
+  font-family: "Andika New Basic";
+  font-style: normal;
+  font-weight: 700;
+  /* 
+  font-size: 24px;
+  line-height: 39px; */
+  /* identical to box height */
+
+  color: rgba(70, 65, 65, 0.6);
+
+  border: 1px solid rgba(0, 0, 0, 0.25);
 `;
 export const Avatar = styled.div`
   flex: 0.5;

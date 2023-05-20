@@ -21,6 +21,7 @@ class ExperienceContract {
     assert(!employee.status.active, "Person already has an active job");
     company.employees.set(employee_id, 1);
     employee.status = new Status({ active: true, company_id, startYear: currentYear() });
+    return employee;
   }
 
   @call({})
@@ -51,8 +52,8 @@ class ExperienceContract {
     const company_id = near.predecessorAccountId();
     if (!this.company_map[company_id]) this.company_map.set(company_id, new Company(company_id));
     const company = this.company_map[company_id];
-    return company.employees.keys_as_vector();
-    //return company.employees.keys_as_vector().toArray();
+    // return company.employees.keys_as_vector();
+    return company.employees.keys_as_vector().toArray();
   }
 
   @view({})

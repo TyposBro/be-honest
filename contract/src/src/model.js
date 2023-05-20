@@ -3,7 +3,7 @@ import {UnorderedMap, Vector} from 'near-sdk-js';
 export class Company{
 	constructor({company_id}){
 		this.company_id = company_id;
-		this.employees = new Vector<String>('active_employees_map');
+		this.employees = new UnorderedMap('active_employees_map');
 	}
 };
 

@@ -9,7 +9,7 @@ import {
   Tag,
 } from "./index.styled";
 
-const Info = () => {
+export const Info = () => {
   return (
     <Container>
       <Main>

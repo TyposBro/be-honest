@@ -61,7 +61,7 @@ export const Tag = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 17px;
+  padding: 10px 15px;
   height: 40px;
 
   background: #ffffff;
@@ -75,4 +75,8 @@ export const Tag = styled.div`
   line-height: 39px;
 
   color: rgba(70, 65, 65, 0.6);
+
+  :not(:first-child) {
+    margin-left: 10px;
+  }
 `;

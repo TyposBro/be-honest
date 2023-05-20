@@ -5,10 +5,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5px;
+  /* margin: 5px; */
+  margin-top: 20px;
   background-color: white;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 20px;
   font-family: "Andika New Basic";
   font-style: normal;
   font-weight: 700;

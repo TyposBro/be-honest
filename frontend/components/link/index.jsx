@@ -10,12 +10,13 @@ import {
   _Messenger,
   _Bookmark,
 } from "./index.styled";
+import logo from "../../assets/logo.jpg";
 
 const Link = () => {
   return (
     <Container>
       <Logo>
-        <Image src="https://img.icons8.com/?size=512&id=30840&format=png" />
+        <Image src={logo} />
       </Logo>
 
       <_link to="/">

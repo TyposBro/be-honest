@@ -1,7 +1,7 @@
 import { Card, Info } from "../../components";
 import PostActivityCard from "../../components/post";
 import { CardContainer, Container } from "./index.styled";
-export const Profile = () => {
+export const User = () => {
   var thread = {
     posts: [
       { icon: "apple", company: "Apple", position: "SWE", months: "1 yr ", rating: 3 },
@@ -33,4 +33,4 @@ export const Profile = () => {
   );
 };
 
-export default Profile;
+export default User;

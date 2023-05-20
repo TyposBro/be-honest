@@ -12,6 +12,14 @@ export const router = createBrowserRouter([
     ),
   },
   {
+    path: "/hr",
+    element: (
+      <Layout>
+        <Profile />
+      </Layout>
+    ),
+  },
+  {
     path: "/c",
     element: (
       <Layout>

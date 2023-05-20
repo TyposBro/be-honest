@@ -11,3 +11,5 @@ export const Layout = ({ children }) => {
     </Container>
   );
 };
+
+export default Layout;

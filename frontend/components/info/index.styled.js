@@ -34,7 +34,7 @@ export const InfoContainer = styled.div`
 `;
 
 export const Avatar = styled.img`
-  height: 130px;
+  height: 150px;
   width: 130px;
   border-radius: 10px;
 `;
@@ -53,7 +53,7 @@ export const Subtitle = styled.div`
 
 export const TagContainer = styled.div`
   display: flex;
-  margin-top: 60px;
+  margin-top: 40px;
 `;
 export const Tag = styled.div`
   /* #JavaScript */

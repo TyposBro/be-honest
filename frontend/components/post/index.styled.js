@@ -19,15 +19,19 @@ export const Avatar = styled.div`
 export const Job = styled.div`
   flex: 1;
   justify-content: center;
+  color: black;
+
 `;
 
 export const Company = styled.div`
   flex: 1;
   justify-content: center;
+  color: black;
 `;
 export const Months = styled.div`
   flex: 1;
   justify-content: center;
+  color: black;
 `;
 export const Rating = styled.div`
   flex: 1;

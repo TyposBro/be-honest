@@ -35,7 +35,7 @@ class ExperienceContract{
 		const company = this.company_map[company_id];
 		const employee = this.employee_map[employee_id];
 		assert(employee.status.active && employee.status.company_id == company_id && company.employees.get(employee_id), 'Person was not hired to this company');
-		company.employees.set(employee_id, 0);
+		company.employees.remove(employee_id);
 		employee.experience.push(WorkPeriod({startYear:employee.status.startYear, endYear:currentYear(), company_id}))
 		employee.status = new Status({active:false});
 	}
@@ -47,7 +47,8 @@ class ExperienceContract{
 		if(!this.company_map[company_id])
 			this.company_map.set(company_id, new Company(company_id));
 		const company = this.company_map[company_id]
-		return Array.from(company.employees);
+		return company.employees.keys_as_vector();
+		//return company.employees.keys_as_vector().toArray();
 	}
 
 	@view({})

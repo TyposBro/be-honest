@@ -1,8 +1,10 @@
 import { Container } from "./index.styled";
-import { Card } from "../../components";
+import { Card, Info } from "../../components";
+import { CardContainer } from "../user/index.styled";
 
 export const Hr = () => {
-  return <Container>
+  return (
+    <Container>
       <Info />
       <CardContainer>
         <Card
@@ -14,7 +16,8 @@ export const Hr = () => {
         />
         <Card title="Total experience" position="HR manager" company="" time="3y" />
       </CardContainer>
-  </Container>;
+    </Container>
+  );
 };
 
 export default Hr;

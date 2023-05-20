@@ -5,7 +5,9 @@ export const Container = styled.div`
   width: 100%;
   /* background: rgba(255, 255, 255, 0.5); */
   background-color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  border: 1px solid rgba(0, 0, 0, 0.25);
+
   border-radius: 40px;
   padding: 30px 40px;
   color: black;

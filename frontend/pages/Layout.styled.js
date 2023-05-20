@@ -9,7 +9,8 @@ const _layout = css`
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: rgba(208, 253, 240, 0.9);
+  background-color: rgba(232, 248, 244, 0.99);
+  /* background-color: rgba(245, 245, 247, 0.95); */
   padding: 20px;
   width: 100vw;
   height: 100%;

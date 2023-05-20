@@ -22,7 +22,7 @@ export const PostCard = styled.div`
 
   color: rgba(70, 65, 65, 0.6);
 
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.25);
 `;
 export const Avatar = styled.div`
   flex: 0.5;

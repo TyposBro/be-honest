@@ -12,7 +12,8 @@ export const Container = styled.div`
   width: 350px;
   height: 450px;
   border-radius: 25px;
-  padding: 20px 30px;
+  padding: 20px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
 `;
 
 export const Logo = styled.div`
@@ -37,6 +38,7 @@ export const _link = styled(Link)`
   align-items: center;
 
   text-decoration: none;
+  /* border: 1px solid rgba(0, 0, 0, 0.25); */
 
   color: rgba(70, 65, 65, 0.6);
 `;
@@ -46,6 +48,7 @@ const icon = css`
   width: 24px;
   height: 24px;
   color: rgba(70, 65, 65, 0.6);
+  margin-right: 10px;
 `;
 
 export const _Bookmark = styled(BookmarkFill)`

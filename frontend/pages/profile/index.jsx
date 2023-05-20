@@ -1,5 +1,4 @@
 import { Card, Info } from "../../components";
-
 import PostActivityCard from "../../components/post";
 import { CardContainer, Container } from "./index.styled";
 export const Profile = () => {

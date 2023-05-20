@@ -1,23 +1,40 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Company, Profile, Hello } from "./pages";
+import { Layout } from "./pages/Layout";
 
 export const router = createBrowserRouter([
   {
     path: "/p",
-    element: <Profile />,
+    element: (
+      <Layout>
+        <Profile />
+      </Layout>
+    ),
   },
   {
     path: "/c",
-    element: <Company />,
+    element: (
+      <Layout>
+        <Company />
+      </Layout>
+    ),
   },
   {
     path: "/hello",
-    element: <Hello />,
+    element: (
+      <Layout>
+        <Hello />
+      </Layout>
+    ),
   },
 
   {
     path: "/",
-    element: <Profile />,
+    element: (
+      <Layout>
+        <Profile />
+      </Layout>
+    ),
   },
 ]);
 

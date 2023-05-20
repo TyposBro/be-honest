@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { Home } from "@styled-icons/boxicons-regular";
+import styled, { css } from "styled-components";
+import { Home, Hash } from "@styled-icons/boxicons-regular";
 import { Messenger } from "@styled-icons/boxicons-logos";
 import { Notifications } from "@styled-icons/material-sharp";
-import { BookmarkFill } from "@styled-icons/bootstrap";
+import { BookmarkFill, Search } from "@styled-icons/bootstrap";
 
 export const Container = styled.div`
   display: flex;
@@ -33,7 +33,37 @@ export const _link = styled(Link)`
   line-height: 29px;
   /* identical to box height */
 
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
   color: rgba(70, 65, 65, 0.6);
 `;
 
-export const _Home = styled(Link)``;
+const icon = css`
+  /* Vector */
+  width: 24px;
+  height: 24px;
+  color: rgba(70, 65, 65, 0.6);
+`;
+
+export const _Bookmark = styled(BookmarkFill)`
+  ${icon}
+`;
+export const _Hash = styled(Hash)`
+  ${icon}
+`;
+export const _Home = styled(Home)`
+  ${icon}
+`;
+export const _Notification = styled(Notifications)`
+  ${icon}
+`;
+export const _Messenger = styled(Messenger)`
+  ${icon}
+`;
+
+export const _Search = styled(Search)`
+  ${icon}
+`;
